@@ -8,7 +8,7 @@
     {
       "name": "reprospec",
       "source": ".",
-      "description": "ReproSpec: reproduce a paper's results through a staged, gated workflow (init, outline, plan, detail, analyse, reproduce, verify, rework, adjust, organize, audit, deliver) with explicit definition-substitution and data-integrity policies."
+      "description": "ReproSpec: reproduce a paper's results through a staged, gated workflow (init, outline, plan, detail, analyse, reproduce, verify, rework, adjust, organize, audit, deliver) with explicit definition-substitution and data-integrity policies, plus a consent-gated feedback skill that files reproduction problems as GitHub issues."
     }
   ]
 }

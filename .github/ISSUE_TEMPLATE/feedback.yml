@@ -1,0 +1,83 @@
+name: Feedback
+description: Report a problem encountered while using ReproSpec
+title: "[Usability] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem with ReproSpec. Please keep one problem
+        per issue.
+
+        Do not paste credentials, personal file paths, raw dataset rows, or
+        long excerpts from a paper. `/reprospec:feedback` files the same
+        structure automatically and scrubs private information first.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Used to derive the title prefix and labels.
+      options:
+        - Bug
+        - Usability
+        - Documentation
+        - Data issue
+        - Feature request
+    validations:
+      required: true
+  - type: input
+    id: reprospec-version
+    attributes:
+      label: ReproSpec version
+      placeholder: 0.2.0
+    validations:
+      required: true
+  - type: input
+    id: stage
+    attributes:
+      label: Affected stage
+      description: The stage command where the problem appears, if any.
+      placeholder: /reprospec:analyse
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One or two sentences stating what went wrong and where.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Claude Code version, operating system, and Python version if used.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected vs actual
+      value: |
+        Expected:
+
+        Actual:
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: This issue contains no credentials, personal paths, raw dataset rows, or long excerpts from a paper.
+          required: true

@@ -87,6 +87,9 @@ stages in order:
 Each stage is a skill under the `reprospec` plugin and is invoked as the
 corresponding `/reprospec:<stage>` slash command.
 
+Outside the twelve stages, file a problem encountered during a reproduction
+with `/reprospec:feedback` (see [Feedback](#feedback)).
+
 Place source datasets under `inputs/` or pass each file explicitly to the Plan
 stage. Stages that accept target IDs, such as reproduce, verify, rework, adjust,
 organize, and audit, also accept a bounded request such as
@@ -332,6 +335,33 @@ quality issue. Otherwise ReproSpec must not lock the specification, must not
 start `/reprospec:reproduce`, and must keep the next action inside
 `/reprospec:plan` or `/reprospec:analyse`.
 
+## Feedback
+
+When a reproduction exposes a ReproSpec problem — a broken stage, a confusing
+gate, a documentation gap — `/reprospec:feedback` turns it into a GitHub issue
+on this repository. You can invoke it yourself at any time, or start it after
+a stage reports a problem. The skill never creates a branch, commit, push, or
+pull request, and never writes into your reproduction workspace.
+
+Privacy is a hard gate, not a guideline. The skill prepares the issue entirely
+on your machine, scrubs credentials, personal paths, identifiers, raw data
+rows, and long paper excerpts, then shows a consent card with the verbatim
+issue title, labels, and body. Nothing is published until you explicitly
+approve that preview. Declining or giving an ambiguous answer cancels the
+submission with no residue anywhere.
+
+Issues follow the repository's conventions: the title is
+`[<Category>] <short problem title>`, labels come from the repository's
+existing labels, and the body mirrors the
+[feedback issue form](.github/ISSUE_TEMPLATE/feedback.yml) with summary,
+environment, reproduction steps, expected versus actual behavior, and a
+privacy statement.
+
+The GitHub CLI (`gh`) is required. If it is not installed or not
+authenticated, the skill tells you plainly that feedback cannot be used yet,
+prints the install and `gh auth login` steps, and stops without creating
+anything.
+
 ## Install
 
 Validate the plugin first:
@@ -371,6 +401,9 @@ to pick up the changes.
 .claude-plugin/
 |-- plugin.json
 `-- marketplace.json
+.github/
+`-- ISSUE_TEMPLATE/
+    `-- feedback.yml        # feedback issue form used by /reprospec:feedback
 docs/
 |-- skill-format.md
 skills/
@@ -385,7 +418,8 @@ skills/
 |-- rework/
 |-- organize/
 |-- audit/
-`-- deliver/
+|-- deliver/
+`-- feedback/
 ```
 
 The reusable format contract for contributors is documented in

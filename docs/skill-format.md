@@ -57,6 +57,16 @@ Every `SKILL.md` uses this order:
 Keep each section concise. Put detailed contracts, schemas, and edge cases in
 the linked reference or asset instead of repeating them in the entrypoint.
 
+### Non-Stage Skills
+
+`feedback` is a utility skill, not one of the twelve stages. It uses the same
+frontmatter and section skeleton, but its completion card starts with
+`**ReproSpec | FEEDBACK**` (no stage number), it owns no stage gate, and its
+`Next` block tells the user to resume the workflow rather than naming the next
+stage. It additionally owns a consent decision protocol: no branch, commit,
+push, pull request, or issue may be created before the user explicitly approves
+the previewed content. Do not add stage numbering or stage gates to it.
+
 ## Section Rules
 
 - `User Input`: explain how optional invocation arguments affect the stage.
