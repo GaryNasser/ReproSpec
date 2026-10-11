@@ -1,0 +1,44 @@
+{
+  "dataset_id": "{{DATASET_ID}}",
+  "title": "{{TITLE}}",
+  "role": "{{ROLE}}",
+  "canonical_format": "",
+  "description": "",
+  "raw_source_count": 0,
+  "source_paths": [],
+  "source_sha256": [],
+  "source_map": "",
+  "extraction_methods": [],
+  "producer_code": [],
+  "transformations": [],
+  "keys": [],
+  "unit_definitions": {},
+  "coverage": {
+    "sample": "",
+    "period": "",
+    "frequency": "",
+    "geography": ""
+  },
+  "missing_value_policy": "",
+  "completeness": {
+    "required_scope": "",
+    "required_values_covered": false,
+    "intentionally_omitted": [],
+    "evidence": []
+  },
+  "load_without_raw": {
+    "verified": false,
+    "command": "",
+    "evidence": ""
+  },
+  "reuse_test": {
+    "verified": false,
+    "description": "",
+    "evidence": ""
+  },
+  "known_limitations": [],
+  "figure_ids": [],
+  "audit_steps": [],
+  "reuse_notes": "",
+  "license_or_restrictions": ""
+}

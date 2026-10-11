@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.2.0",
+  "paper_id": "{{PAPER_ID}}",
+  "status": "pending",
+  "updated_at": null,
+  "inventory": "data_inventory.csv",
+  "catalog": "data_catalog.csv",
+  "report": "data_organization.md",
+  "organized_path": "data/organized",
+  "raw_source_count": 0,
+  "dataset_count": 0,
+  "canonical_formats": [],
+  "canonical_checkpoint": false,
+  "source_disposition": "pending",
+  "user_decision": null,
+  "user_approved": false,
+  "user_confirmed_at": null,
+  "include_raw_in_delivery": false,
+  "datasets": [],
+  "verification": {
+    "status": "pending",
+    "required_coverage": false,
+    "source_map_ready": false,
+    "load_without_raw": false,
+    "audit_ready": false,
+    "reuse_ready": false,
+    "checks": []
+  }
+}

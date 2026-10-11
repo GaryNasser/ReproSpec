@@ -1,0 +1,14 @@
+{
+  "name": "reprospec-marketplace",
+  "description": "ReproSpec: staged, gated reproduction of figures and quantitative claims from data-driven papers and research reports.",
+  "owner": {
+    "name": "ReproSpec contributors"
+  },
+  "plugins": [
+    {
+      "name": "reprospec",
+      "source": ".",
+      "description": "ReproSpec: reproduce a paper's results through a staged, gated workflow (init, outline, plan, detail, analyse, reproduce, verify, rework, adjust, organize, audit, deliver) with explicit definition-substitution and data-integrity policies."
+    }
+  ]
+}

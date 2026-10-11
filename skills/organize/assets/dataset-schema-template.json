@@ -1,0 +1,19 @@
+{
+  "dataset_id": "{{DATASET_ID}}",
+  "format": "",
+  "canonical_format": "",
+  "scope": "",
+  "record_unit": "",
+  "row_count": 0,
+  "column_count": 0,
+  "primary_keys": [],
+  "fields": [
+    {
+      "name": "",
+      "type": "",
+      "unit": "",
+      "nullable": true,
+      "description": ""
+    }
+  ]
+}

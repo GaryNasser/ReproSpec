@@ -1,0 +1,8 @@
+{
+  "schema_version": "0.2.0",
+  "paper_id": "{{PAPER_ID}}",
+  "status": "pending",
+  "updated_at": "{{UPDATED_AT}}",
+  "items": [],
+  "blocking_issues": []
+}

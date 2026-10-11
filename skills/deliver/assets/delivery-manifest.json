@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.8.0",
+  "paper_id": "{{PAPER_ID}}",
+  "paper_title": "{{PAPER_TITLE}}",
+  "master_spec_version": "{{MASTER_VERSION}}",
+  "delivered_at": "{{DELIVERED_AT}}",
+  "data_integrity": {
+    "status": "{{DATA_INTEGRITY_STATUS}}",
+    "items": {{INTEGRITY_ITEMS}},
+    "origin_confirmed": {{INTEGRITY_ORIGIN_CONFIRMED}},
+    "reliability_confirmed": {{INTEGRITY_RELIABILITY_CONFIRMED}},
+    "definition_aligned": {{INTEGRITY_ALIGNED}},
+    "user_confirmed": {{INTEGRITY_USER_CONFIRMED}}
+  },
+  "definition_substitutions": {
+    "count": {{DEFINITION_SUBSTITUTION_COUNT}},
+    "ids": {{DEFINITION_SUBSTITUTION_IDS_JSON}},
+    "replacement_master_ids": {{DEFINITION_REPLACEMENT_MASTER_IDS_JSON}}
+  },
+  "audit": {
+    "status": "{{AUDIT_STATUS}}",
+    "figures": {{AUDIT_FIGURE_COUNT}}
+  },
+  "computation_integrity": {
+    "status": "{{COMPUTATION_INTEGRITY_STATUS}}",
+    "figures_checked": {{COMPUTATION_FIGURES_CHECKED}},
+    "published_values_used_as_inputs": {{COMPUTATION_VIOLATIONS}}
+  },
+  "time_range": {
+    "selection": "{{TIME_RANGE_SELECTION}}",
+    "start_date": "{{TIME_RANGE_START}}",
+    "end_date": "{{TIME_RANGE_END}}",
+    "timezone": "{{TIME_RANGE_TIMEZONE}}"
+  },
+  "organization": {
+    "status": "{{ORGANIZATION_STATUS}}",
+    "datasets": {{ORGANIZATION_DATASETS}},
+    "canonical_formats": {{ORGANIZATION_CANONICAL_FORMATS}},
+    "canonical_checkpoint": {{ORGANIZATION_CANONICAL_CHECKPOINT}},
+    "source_disposition": "{{DATA_DISPOSITION}}",
+    "user_approved": {{ORGANIZATION_USER_APPROVED}},
+    "audit_ready": {{ORGANIZATION_AUDIT_READY}},
+    "reuse_ready": {{ORGANIZATION_REUSE_READY}}
+  },
+  "figure_counts": {
+    "verified": {{VERIFIED_COUNT}},
+    "partial": {{PARTIAL_COUNT}},
+    "blocked": {{BLOCKED_COUNT}},
+    "excluded": {{EXCLUDED_COUNT}}
+  },
+  "figure_gallery": {
+    "flat_directory": "figures",
+    "detail_directory": "figure_details",
+    "evidence_directory": "evidence",
+    "spec_lock": "specs/spec_lock.json",
+    "evidence_pack_count": {{EVIDENCE_PACK_COUNT}},
+    "spec_lock_status": "{{SPEC_LOCK_STATUS}}",
+    "runbook_complete_count": {{RUNBOOK_COMPLETE_COUNT}},
+    "runbook_missing_count": {{RUNBOOK_MISSING_COUNT}},
+    "report_reread_events": {{REPORT_REREAD_EVENTS}},
+    "flat_image_count": {{FLAT_FIGURE_COUNT}},
+    "title_style_policy": "matplotlib_notebook_default",
+    "title_style_source": "matplotlib.rcParamsDefault",
+    "source_derived_title_font_matching": false,
+    "title_alignment_default": "centered",
+    "palette_matching_required": true,
+    "plot_text_language_default": "en"
+  },
+  "adjustment_log": "logs/adjustment_log.md",
+  "artifacts": []
+}

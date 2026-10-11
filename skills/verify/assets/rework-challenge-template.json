@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "challenge_id": "{{CHALLENGE_ID}}",
+  "figure_id": "{{FIGURE_ID}}",
+  "status": "issued",
+  "attempt": 1,
+  "issued_at": "{{ISSUED_AT}}",
+  "issued_by": "verify",
+  "deviation": {
+    "kind": "quantitative",
+    "summary": "",
+    "metrics": {},
+    "evidence_paths": [],
+    "acceptance_check": {}
+  },
+  "question": "Identify the minimum evidence-supported data, specification, or implementation cause of this deviation and state the exact change that will satisfy the acceptance check without using published values as inputs.",
+  "required_response_fields": [
+    "cause_type",
+    "causal_evidence",
+    "rejected_alternatives",
+    "affected_lineage_or_code",
+    "minimum_change",
+    "falsification_test",
+    "expected_effect",
+    "acceptance_check"
+  ],
+  "response": {
+    "cause_type": null,
+    "causal_evidence": [],
+    "rejected_alternatives": [],
+    "affected_lineage_or_code": [],
+    "minimum_change": null,
+    "falsification_test": null,
+    "expected_effect": null,
+    "acceptance_check": null
+  },
+  "history": [],
+  "resolved_at": null,
+  "resolution": null
+}

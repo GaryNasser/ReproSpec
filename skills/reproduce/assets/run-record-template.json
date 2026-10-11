@@ -1,0 +1,66 @@
+{
+  "figure_id": "{{FIGURE_ID}}",
+  "master_spec_version": "{{MASTER_VERSION}}",
+  "specification": {
+    "spec_path": "{{SPEC_PATH}}",
+    "spec_sha256": "{{SPEC_SHA256}}",
+    "evidence_pack_path": "{{EVIDENCE_PACK_PATH}}",
+    "evidence_pack_sha256": "{{EVIDENCE_PACK_SHA256}}",
+    "detail_validation_status": "passed",
+    "report_reread_for_requirements": false
+  },
+  "reproduction_window": {
+    "selection": "{{TIME_RANGE_SELECTION}}",
+    "start_date": "{{TIME_RANGE_START}}",
+    "end_date": "{{TIME_RANGE_END}}",
+    "timezone": "{{TIME_RANGE_TIMEZONE}}"
+  },
+  "started_at": "{{STARTED_AT}}",
+  "finished_at": null,
+  "status": "running",
+  "commands": [],
+  "environment": {},
+  "reread_events": [],
+  "definition_substitutions": [],
+  "inputs": [],
+  "outputs": [],
+  "runbook_steps": [],
+  "rendering": {
+    "canvas_sizing": "automatic",
+    "actual_figsize_inches": null,
+    "title_alignment": "centered",
+    "title_style": {
+      "policy": "matplotlib_notebook_default",
+      "source": "matplotlib.rcParamsDefault",
+      "source_derived_font_matching": false,
+      "overall": {
+        "font_family": "",
+        "font_size_pt": null,
+        "font_weight": ""
+      },
+      "panel": {
+        "font_family": "",
+        "font_size_pt": null,
+        "font_weight": ""
+      }
+    },
+    "computation_source": "approved_real_data",
+    "published_values_used_as_inputs": false,
+    "output_formats": ["png"],
+    "additional_formats_and_reason": [],
+    "chart_type": "",
+    "per_panel_chart_types": [],
+    "chart_type_preserved": false,
+    "plot_text_language": "en",
+    "plot_text_language_exception_and_evidence": "",
+    "palette_matching_required": true,
+    "palette": [],
+    "palette_evidence_source": [],
+    "palette_mapping": [],
+    "palette_acceptance_tolerance": "",
+    "palette_note": "",
+    "rendering_notes": []
+  },
+  "logs": [],
+  "data_hashes": {}
+}

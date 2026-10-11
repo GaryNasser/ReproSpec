@@ -1,0 +1,30 @@
+# Local inputs and reproduction artifacts
+inputs/
+work/
+figure-output/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+credentials/
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
